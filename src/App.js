@@ -1,15 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-import Article from './components/Article/Article'
-import Brand from './components/Article/Brand'
-import CTA from './components/Article/CTA'
-import Feature from './components/Article/Feature'
-import Navbar from './components/Article/Navbar'
+import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
+import { CTA, Brand, NavBar } from './components';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-        <h1>GPT_AI</h1>
+    <div className='App'>
+        <div className='gradient__bg'>
+          <NavBar />
+          <Header />
+        </div>
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <Possibility />
+        <CTA />
+        <Blog />
+        <Footer />
     </div>
   )
 }
